@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures that padding and borders are included in the element's width and height */
+}
+
+body {
+    background-color: #F1EEDC;
+    color: black;
+    font-family: "PT Serif", serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    font-size: 35px;
+    color: #523e8e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E5DDC5;
+    height: 12vh;
+    font-weight: 400;
+    padding: 0 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 40px  ;
+}
+
+.nav-links a {
+   list-style: none;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #523e8e;
+}
+
+.navbar-icons li i:hover {
+    color: black;
+    font-size: 26px;
+    transition: 300ms;
+    font-weight: 600;
+}
+
+.navbar-icons li i {
+    font-size: 25px; 
+}
+
+.navbar-icons {
+    display: flex; 
+    gap: 60px; 
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+
+#profile-block {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 13vh;
+    right: 0;
+    background-color:white;
+    box-shadow: 0px 0px 10px white;
+    display: none;
+}
+
+#profile-block>div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize; 
+}
+
+#profile-block>div>p {
+    margin-left: 40px;
+    font-size: 34px;
+}
+
+#profile-block>div>button {
+    width: 70px;
+    height: 35px;
+    background-color:#b4a6dd;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+}
+
+#profile-block>div>button:hover {
+    cursor: pointer;
+    font-size: 17px;
+    transition: 300ms;
+}
+
+#profile-block>p {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 0.5vh;
+    right: 5px;
+}
+
+#profile-block>p:hover {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+
+#main-cont {
+    flex: 1; /* This makes the main content take up the remaining space */
+    overflow: auto;
+    width: 100%;
+}
+
+#product-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+#product-block>div {
+    width: 26%;
+    height: 400px;
+    margin: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#product-block>div:hover{
+    cursor: pointer;
+}
+
+#wishlistbtn {
+    background-color:#523e8e;
+    color: black;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+#wishlistbtn:hover {
+    background-color: transparent;
+}
+
+#cartbtn {
+    background-color: #523e8e;
+    color: black;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+#cartbtn:hover {
+    background-color: transparent;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #523e8e;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color:#E5DDC5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px; 
+}
+
+footer h1 {
+    margin-bottom: 10px;
+    color: #523e8e;
+    font-size: 40px;
+}
+
+footer>ul:nth-child(2) {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer>ul i {
+    font-size: 25px;
+}
+
+footer>ul:nth-child(3) {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+footer>ul a {
+    text-decoration: none;
+    color: black;
+}
+#popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#popup>div {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+#popup-close {
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 14vh;
+    right: 310px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-close:hover {
+    transition: 300ms;
+    background-color: rgb(211, 211, 211);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+#popup-desc::first-letter {
+    text-transform: capitalize;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+button:disabled:hover {
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.noproduct{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noproduct-button {
+    width: 30%;
+}
+
+.wishlistbtn{
+    width: 100px;
+}
+
+
+

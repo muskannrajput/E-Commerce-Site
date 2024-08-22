@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Essentials</title>
+    <link rel="stylesheet" href="feedback.css"> 
+    <link rel="shortcut icon" href="../favicon_io (6)/favicon.ico" type="image/x-icon">
+
+    
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Essentials</div>
+            <ul class="nav-links">
+                <li><a href="../Home Page/homepage.html">Home</a></li>
+                <li><a href="../Services/Service.html">Service</a></li>
+                <li><a href="../About/About.html">About</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+                <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="feedback">
+            <h1>Feedback Us</h1>
+
+            <div class="feedback-container">
+                <aside class="write-review">
+                    <h2>Write a Review</h2>
+                    <form action="/submit-review" method="POST">
+                        <label for="review-name">Name:</label>
+                        <input type="text" id="review-name" name="name" required>
+                        
+                        <label for="review-email">Email:</label>
+                        <input type="email" id="review-email" name="email" required>
+                        
+                        <label for="review-rating">Rating:</label>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="star">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="star">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="star">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="star">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733;</label>
+                        </div>
+                        
+                        <label for="review-message">Your Review:</label>
+                        <textarea id="review-message" name="review" rows="5" required></textarea>
+                        
+                        <button type="submit">Submit Review</button>
+                    </form>
+                </aside>
+
+                <aside class="essentials-reviews">
+                    <h2>Essentials Reviews</h2>
+                    <div class="review">
+                        <h3>John Doe</h3>
+                        <div class="rating">
+                            <span class="star-filled">★★★★★</span>
+                        </div>
+                        <p>Great selection of products! The customer service was excellent, and I found everything I needed. Highly recommend!</p>
+                    </div>
+                    <div class="review">
+                        <h3>Jane Smith</h3>
+                        <div class="rating">
+                            <span class="star-filled">★★★★☆</span>
+                        </div>
+                        <p>Good experience overall. The products are high quality, but the delivery took a bit longer than expected.</p>
+                    </div>
+                    <div class="review">
+                        <h3>Emily Johnson</h3>
+                        <div class="rating">
+                            <span class="star-filled">★★★★★</span>
+                        </div>
+                        <p>Absolutely love this store! The variety is fantastic and the staff are always so helpful. Will definitely shop here again!</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Essentials</h1>
+        <ul>
+          <a href="https://www.twitter.com"><li><i class="fa-brands fa-x-twitter"></i></li></a>
+          <a href="https://www.facebook.com"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+          <a href="https://www.instagram.com"><li><i class="fa-brands fa-instagram"></i></li></a>
+          <a href="https://www.gmail.com"><li><i class="fa-regular fa-envelope"></i></li></a>
+        </ul>
+
+        <ul class="footer-menu">
+          <li><a href="../Home Page/homepage.html">home</a></li>
+          <li><a href="../Services/Service.html">services</a></li>
+          <li><a href="../About/About.html">About Us</a></li>
+          <li><a href="../Contact/contact.html">Contact Us</a></li>
+          <li><a href="../Feedback/feedback.html">feedback</a></li>
+        </ul>
+
+        <p>copyrights@2024 www.Essentials.com | All rights reserved.</p>
+
+      </footer>
+</body>
+</html>
